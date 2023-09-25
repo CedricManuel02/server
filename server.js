@@ -30,5 +30,5 @@ mongoose.connect(`${process.env.DATABASE_CONNECTION}`, {
 
 
 app.listen(port, () => {
-    console.log('listening on port', port);
+    console.log('listening on ports', port);
 })
