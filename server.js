@@ -28,7 +28,7 @@ mongoose.connect(`${process.env.DATABASE_CONNECTION}`, {
     console.error('Error connecting to Mongoose:', err);
   });
 
-// listen port number
+// listen port numbers
 app.listen(port, () => {
     console.log('listening on port', port);
 })
