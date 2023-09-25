@@ -27,6 +27,10 @@ const authenticateToken = async (req, res, next) => {
     })
 }
 // * Api for CRUD operations
+
+const.get("/sample", (req, res) => {
+ res.json({message: "Hello"})   
+})
 router.post("/create", authenticateToken, async (req, res) => {
     try
     {
