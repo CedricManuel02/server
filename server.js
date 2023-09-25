@@ -7,7 +7,7 @@ require('dotenv').config()
 const port = 3001
 
 //Middleware 
-app.use(cors({origin: 'https://factor-infusion.vercel.app/',credentials: true}))
+app.use(cors({origin: '*',credentials: true}))
 app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
