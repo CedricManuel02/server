@@ -181,6 +181,7 @@ router.post("/login", async(req, res) => {
             if(hashPassword){
                 jwt.sign(user, process.env.ACCESS_TOKEN_SECRET,{}, (err, token) => {
                     if(err) throw err
+                    console.log("token", token)
                     res.status(200).cookie("token", token).json({response: user ,message: "Successfully signed in"})
                 })
             }
